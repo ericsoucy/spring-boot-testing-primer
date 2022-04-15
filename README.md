@@ -20,3 +20,4 @@ excellent JUnit 5 crash course as part of the freeCodeCamp
 Furthermore, the official user guide of JUnit 5 (don't forget to bookmark it) also introduces every feature with great
 hands-on examples.
 <https://junit.org/junit5/docs/current/user-guide/>
+<https://rieckpil.de/guide-to-testing-with-spring-boot-starter-test/>
