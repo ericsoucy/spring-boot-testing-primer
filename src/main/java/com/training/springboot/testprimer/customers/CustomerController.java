@@ -1,6 +1,7 @@
 package com.training.springboot.testprimer.customers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,5 +19,10 @@ class CustomerController {
   @GetMapping
   List<Customer> all() {
     return customerService.findAll();
+  }
+
+  @GetMapping("/{id}")
+  public Customer getById(@PathVariable("id") Long id) {
+    return customerService.getCustomerById(id);
   }
 }
