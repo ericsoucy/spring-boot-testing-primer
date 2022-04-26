@@ -65,3 +65,31 @@ curl http://localhost:8080/api/customers
 **Use MockMvc to Test a Spring MVC Thymeleaf View @Controller Endpoint**
 <https://www.youtube.com/watch?v=d7TDoGSZCoc>
 
+## Testing the Persistence Layer Exercise 8
+
+<https://rieckpil.de/test-your-spring-boot-jpa-persistence-layer-with-datajpatest/>
+**for tests focus on non-trivial handcrafted queries**
+
+**Introduction to @DataJpaTest and Pitfalls of In-Memory Databases For Testing**
+<https://www.youtube.com/watch?v=DwBgx30ZWVc>
+
+**Test a Native Query of Your Spring Data JPA Repository With @DataJpaTest**
+<https://www.youtube.com/watch?v=EPxII6TeqTQ>
+
+**Replacing the Default In-Memory Database of @DataJpaTest Using Testcontainers**
+<https://www.youtube.com/watch?v=2fPDw0PVbso>
+
+**Short And Concise Test Setup With @DataJpaTest and Testcontainers**
+<https://www.youtube.com/watch?v=zFkTA95w0oo>
+
+```bash
+@DataJpaTest(properties = {
+        "spring.test.database.replace=NONE",
+        "spring.datasource.url=jdbc:tc:postgresql:12:///springboot"
+})
+// no need to autowire datasource
+// no need to autowire entitymanager
+@Test
+@Sql("/scripts/SOME_SCRIPT.sql")  // to be executed before the test
+void testSomeStuff(){}
+```

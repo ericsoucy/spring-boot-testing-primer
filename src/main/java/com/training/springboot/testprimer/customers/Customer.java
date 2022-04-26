@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.time.ZonedDateTime;
 import java.util.Objects;
 
 @Entity
@@ -12,11 +13,27 @@ class Customer {
   private String firstname;
   private String lastname;
 
+  public ZonedDateTime getJoinedAt() {
+    return joinedAt;
+  }
+
+  public void setJoinedAt(ZonedDateTime joinedAt) {
+    this.joinedAt = joinedAt;
+  }
+
+  private ZonedDateTime joinedAt;
+
   Customer() {}
 
   Customer(String firstName, String lastname) {
     this.firstname = firstName;
     this.lastname = lastname;
+  }
+
+  Customer(String firstName, String lastname, ZonedDateTime joinedAt) {
+    this.firstname = firstName;
+    this.lastname = lastname;
+    this.joinedAt = joinedAt;
   }
 
   public String getFirstname() {
