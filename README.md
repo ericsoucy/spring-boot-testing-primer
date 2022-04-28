@@ -93,3 +93,17 @@ curl http://localhost:8080/api/customers
 @Sql("/scripts/SOME_SCRIPT.sql")  // to be executed before the test
 void testSomeStuff(){}
 ```
+
+# Further Test Slice Annotations  Exercise 9
+
+Testing the Spring RestTemplate With @RestClientTest
+<https://rieckpil.de/testing-your-spring-resttemplate-with-restclienttest/>
+
+<https://rieckpil.de/spring-webclient-for-restful-communication-setup-and-examples/>
+<https://rieckpil.de/test-spring-webclient-with-mockwebserver-from-okhttp/>
+
+Testing JSON Serialization With @JsonTest
+<https://rieckpil.de/testing-your-json-serialization-with-jsontest/>
+
+MongoDB tests with @DataMongoTest
+<https://rieckpil.de/mongodb-testcontainers-setup-for-datamongotest/>
