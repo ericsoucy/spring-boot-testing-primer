@@ -94,7 +94,7 @@ curl http://localhost:8080/api/customers
 void testSomeStuff(){}
 ```
 
-# Further Test Slice Annotations  Exercise 9
+## Further Test Slice Annotations  Exercise 9
 
 Testing the Spring RestTemplate With @RestClientTest
 <https://rieckpil.de/testing-your-spring-resttemplate-with-restclienttest/>
@@ -107,3 +107,16 @@ Testing JSON Serialization With @JsonTest
 
 MongoDB tests with @DataMongoTest
 <https://rieckpil.de/mongodb-testcontainers-setup-for-datamongotest/>
+
+## Infrastructure Setup for Integration Tests With Testcontainers
+
+<https://www.testcontainers.org/>
+<https://rieckpil.de/tag/testcontainers/>
+<https://rieckpil.de/howto-write-spring-boot-integration-tests-with-a-real-database/>
+<https://rieckpil.de/test-spring-applications-using-aws-with-testcontainers-and-localstack/>
+<https://rieckpil.de/reuse-containers-with-testcontainers-for-fast-integration-tests/>
+
+Introduction to Testcontainers with JUnit 5 and Spring Boot
+<https://youtu.be/-mYJKwrySOw>
+
+
