@@ -24,4 +24,13 @@ public class GenericTestcontainersTest {
   void shouldStartCustomContainer() {
     assertTrue(container.isRunning());
   }
+
+  @Test
+  void ShouldDoSomemoreTests() {
+    String ipAddress = container.getHost();
+    String address = container.getHost() + ":" + container.getMappedPort(80);
+    System.out.println(ipAddress + " " + address);
+
+
+  }
 }
